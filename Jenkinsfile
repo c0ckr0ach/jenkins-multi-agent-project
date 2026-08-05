@@ -8,7 +8,7 @@ pipeline {
         stage('Backend'){
             agent{
                 docker{
-                    image 'python:3.11'
+                    image 'python:3.11-slim'
                     reuseNode true
                 }
             }
